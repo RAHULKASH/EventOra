@@ -8,6 +8,9 @@ module.exports = {
       },
       backgroundImage: {
         'Main-Background': "url('/src/assets/images/main.jpg')",
+      },
+      maxWidth: {
+        '8xl': '85rem',
       }
     },
   },

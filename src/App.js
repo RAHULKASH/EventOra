@@ -1,10 +1,13 @@
 import React from 'react';
-import {Main} from "./pages";
+import {Header,Footer} from "./components";
+import { AllRoutes } from './routes/AllRoutes';
 
 export const App = () => {
   return (
-    <div>
-      <Main/>
+    <div className='min-h-screen bg-slate-900 flex flex-col items-center '>
+      <Header/>
+      <AllRoutes/>
+      <Footer/>
     </div>
   )
 }
