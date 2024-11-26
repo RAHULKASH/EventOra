@@ -1,5 +1,6 @@
 import React from 'react';
 import image from "../assets/images/m1.jpg";
+import { Link, Outlet} from 'react-router-dom';
 
 export const EventDetails = () => {
 
@@ -43,11 +44,12 @@ export const EventDetails = () => {
 
           <p className="my-4">
             <span className="mr-2 font-bold">Register : </span>
-            <a href="#" target="_blank" rel="noreferrer">Click here</a>
+            <Link to="registerAsAttendee" target="_blank" rel="noreferrer">Click here</Link>
           </p>
 
         </div>
       </section>
+      <Outlet/>
     </div>
   )
 }
