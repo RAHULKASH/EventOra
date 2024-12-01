@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const LoginAsAttendee = () => {
   return (
+
     <main>   
       <form  className='flex flex-col m-20 p-20 border-2 rounded-xl bg-slate-600'>
         <div className="mb-6 flex w-full">

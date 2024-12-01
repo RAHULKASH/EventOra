@@ -23,9 +23,7 @@ export const Login = () => {
         </li>
      </ol>
     </nav>
-      <div>
         <Outlet/>
-      </div>
     </div>
   )
 } 

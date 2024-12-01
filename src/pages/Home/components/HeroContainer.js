@@ -11,7 +11,7 @@ export const HeroContainer = () => {
             <Link to="eventList" type="button" className="text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-pink-300 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 focus:outline-none">Explore Events</Link>
         </div>
         <div className="visual my-5">
-            <img className="rounded-lg  h-72   shadow-xl " src={m1} alt="main-section" />
+            <img className="rounded-lg  h-72 hover:s  shadow-xl " src={m1} alt="main-section" />
         </div>
     </section>
   )
