@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import m1 from "../../../assets/images/m1.jpg";
-import m2 from "../../../assets/images/m2.jpg"
+import m2 from "../../../assets/images/m2.jpg";
+import m3 from "../../../assets/images/the.jpg"
 
 export const HeroContainer = () => {
   return (
-    <section className="flex flex-col min-h-80 lg:flex-row gap-16 items-center text-white p-14 m-auto bg-black ">
+    <section className="flex flex-col min-h-80 lg:flex-row bg-cover h-screen gap-16 items-center text-white p-14 m-auto " style={{ backgroundImage: `url(${m3})`}}>
         <div className="text my-5 ">
             <h1 className="text-5xl mt-6 font-bold">Manage Your Events</h1>
             <p className="text-2xl my-12 px-1 ">At Temple Places, we invite you to embark on a spiritual journey through some of the India's most awe-inspiring temples.</p>

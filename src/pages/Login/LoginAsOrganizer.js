@@ -9,7 +9,7 @@ export const LoginAsOrganizer = () => {
         <form  className='flex flex-col m-20 p-20 border-2 rounded-xl bg-slate-600' >
           <div className="mb-6 flex w-full">
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your email</label>
-              <input  type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="shubham@example.com" required autoComplete="off" />
+              <input  type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Organizer@gamil.com" required autoComplete="off" />
           </div>
           <div className="mb-6 flex">
               <label htmlFor="password" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your password</label>
