@@ -8,7 +8,7 @@ export const Login = () => {
     <div className='flex justify-center items-center'>
         <ol class="w-8/12 flex flex-row justify-center items-center sparowce-x-1 md:space-x-2 rtl:space-x-reverse border-2 p-20 ">
          <li class="inline-flex items-center">
-         <div class="flex items-center border-2 p-2 m-3 rounded-lg bg-slate-600">
+         <div class="flex items-center overflow-hidden border-2 p-2 m-3 rounded-lg bg-slate-600">
              <Link to="loginAsAttendee"  class="ms-1  font-medium text-gray-400 md:ms-2  hover:text-white active:text-white">As Attendee</Link>
           </div>
         </li>

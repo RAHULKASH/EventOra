@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react';
+import m1 from '../../assets/images/m1.jpg'
 import helpdesk from '../../assets/images/help-desk.png'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -58,20 +58,20 @@ export const About = () => {
         title: "Rahul Kashyap",
         role: "Backend Developer",
         description: "Rahul is responsible for designing and implementing the server-side architecture for EventOra. He ensures the APIs are efficient, secure, and scalable.",
-        image: {helpdesk},
+        image: helpdesk,
         
       },
       {
         title: "Anshu Kumar",
         role: "Backend Developer",
         description: "Anshu focuses on database design and optimization for EventOra. She ensures data integrity and seamless communication between the backend and frontend",
-        image: {helpdesk},
+        image: helpdesk,
       },
       {
         title: "Ankit Kumar",
         role: "Frontend Developer",
         description: "Ankit leads the frontend development of EventOra, crafting an intuitive and visually appealing user interface using modern frameworks like React.",
-        image: {helpdesk},
+        image: helpdesk,
       }
     ]
 
@@ -134,7 +134,7 @@ export const About = () => {
           </div>
         </div>
       </main>
-    <h1>
+    <h1 className='text-center text-4xl  font-extrabold text-stone-600 mt-10'>
     Meet The Minds Behind The EventOra
     </h1>
     <div className=" Scrollbar flex flex-wrap justify-center gap-8 p-8">
@@ -142,7 +142,7 @@ export const About = () => {
         <div
           key={index}
           className=" w-72 bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
-          <img src={"card.image"}alt={"card.title"}className="w-full h-48 object-cover"/>
+          <img src={card.image}alt={"card.title"}className="w-full h-48 object-cover"/>
           <div className="p-4">
             <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
             <p className="text-gray-500 italic mb-2">{card.role}</p>

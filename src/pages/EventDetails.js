@@ -8,7 +8,7 @@ export const EventDetails = () => {
 
   return (
     <div>
-        <section className="flex flex-row gap-24  flex-wrap py-16 min-h-screen w-full ">
+        <section className="flex flex-row gap-24 mt-20 flex-wrap py-16 min-h-screen w-full ">
         <div className="">
           <img className="rounded h-3/4 w-96 shadow-xl shadow-white" src={image} alt="..."/>
         </div>

@@ -23,7 +23,7 @@ useGSAP(()=>{
     <nav ref={boxRef} className="  absolute w-full flex-wrap min-h-20 flex gap-6 flex-row justify-between text-white items-center p-4 ">
        <div className=" flex flex-row items-center gap-4">
             <img src={logo} alt="" className="h-10 w-10 rounded-full" />
-            <p className="text-3xl font-sans">EventOra</p>
+            <p className="text-3xl font-bold">EventOra</p>
        </div>
        <div className="flex flex-row flex-wrap gap-4 justify-center items-center">
           <Link to="/" class="">
@@ -33,7 +33,7 @@ useGSAP(()=>{
             </span>
           </Link>
           <Link to="about" >
-          <span class="relative px-5 py-2 transition-all ease-out group-hover:bg-opacity-0 duration-400">
+          <span class="relative px-5 py-2 transition-all  ease-out group-hover:bg-opacity-0 duration-400">
           <span class="relative text-white  text-l font-bold">About</span>
           </span>
           </Link>

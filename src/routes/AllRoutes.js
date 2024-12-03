@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes ,Route} from 'react-router-dom';
 import {Home,EventList,EventDetails} from "../pages";
 import {About}from "../pages/About/About"
+import {CreateEvents} from '../pages/CreateEvents/CreateEvents'
 import { LoginAsOrganizer,LoginAsFaculty,LoginAsAttendee} from "../pages/Login";
 import { RegisterAsOrganizer,RegisterAsFaculty,RegisterAsAttendee} from "../pages/Register";
 import {Login} from "../pages/Login";
