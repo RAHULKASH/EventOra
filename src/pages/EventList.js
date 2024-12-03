@@ -3,55 +3,44 @@ import { EventCard } from "../components";
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import ScrollTrigger from "gsap/ScrollTrigger";
+import {ScrollTrigger }from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
 
 export const EventList = () => {
-  const cardref = useRef()
-  // useEffect(()=>{
-    
-  //     gsap.from(cardref.current,{
-  //       scale:0,
-  //       duration:1,
-  //       opacity:0,
-  //       // ScrollTrigger:{
-  //       //   trigger:cardref,
-  //       //   start: "top 75%",
-  //       //   end: "bottom 25%",
-  //       //   scrub: true,
-  //       //   markers: true,
-  //       // }
-  //   })
-  // },[])
+ 
   useGSAP(()=>{
-    gsap.from(cardref.current,{
-      scale:0,
+    gsap.from(".helo .top6",{
+      y:100,
       duration:1,
       opacity:0,
-      ScrollTrigger:{
-        trigger:cardref.current,
-        start: "top 20%",
-        end: "bottom 25%",
-        scrub: true,
-        markers: true,
-      }
-  })
+      stagger:0.3,
+    })
 
-  })
-  gsap.from(cardref.current,{
-    scale:0,
+  gsap.from(".helo .mid3",{
+    y:100,
     duration:1,
     opacity:0,
-    // ScrollTrigger:{
-    //   trigger:cardref,
-    //   start: "top 75%",
-    //   end: "bottom 25%",
-    //   scrub: true,
-    //   markers: true,
-    // }
+    stagger:0.3,
+    scrollTrigger:(".helo .mid3",{
+      trigger:".helo .mid3",
+      start:"top 75%"
+    })
 })
+
+gsap.from(".helo .down3",{
+  y:100,
+  duration:1,
+  opacity:0,
+  stagger:0.3,
+  scrollTrigger:(".helo .down3",{
+    trigger:".helo .mid3",
+    start:"top 75%"
+    })
+ })
+})
+  
  
 
   return (
@@ -82,32 +71,33 @@ export const EventList = () => {
      </ol>
     </nav>
 
-    <div ref={cardref} className='flex flex-row flex-wrap gap-12 justify-center items-center py-16 list-none'>
-      <li >
+    <div  className=' helo flex flex-row flex-wrap gap-12 justify-center items-center py-16 list-none'>
+      <li className='top6'>
       <EventCard/>
       </li>
-      <li>
+      <li className='top6'>
       <EventCard/>
       </li>
-      <li>
+      <li className='top6'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='top6'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='top6'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='top6'>
       <EventCard/>
-      </li> <li>
+      </li>
+       <li className='mid3'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='mid3'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='mid3'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='down3'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='down3'>
       <EventCard/>
-      </li> <li>
+      </li> <li className='down3'>
       <EventCard/>
       </li>
     </div>
