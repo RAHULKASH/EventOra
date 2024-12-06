@@ -43,6 +43,11 @@ useGSAP(()=>{
             <span class="relative text-white  text-l font-bold">Events</span>
             </span>
           </Link>
+          <Link to="create_event">
+          <span class="relative px-5 py-2 transition-all ease-out group-hover:bg-opacity-0 duration-400">
+            <span class="relative text-white  text-l font-bold">Create Events</span>
+            </span> 
+          </Link>
           <Link to="login" >
             
             <span class="relative px-5 py-2 transition-all ease-out group-hover:bg-opacity-0 duration-400">
